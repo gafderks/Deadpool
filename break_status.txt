@@ -8,3 +8,8 @@
 - agitated
 	tracegraph crashes
 
+- determined
+	tracegraph crashes
+
+- eloquent
+	tracegraph crashes
