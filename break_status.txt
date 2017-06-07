@@ -11,3 +11,5 @@
 - determined
 	tracegraph crashes
 
+- eloquent
+	tracegraph crashes
