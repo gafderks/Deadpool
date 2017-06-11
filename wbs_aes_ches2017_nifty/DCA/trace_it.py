@@ -11,7 +11,9 @@ def processinput(iblock, blocksize):
 def processoutput(output, blocksize):
     return int(''.join([x for x in output.split('\n') if x.find('OUTPUT')==0][0][10:].split(' ')), 16)
 
-T=TracerPIN('../target/wb_challenge', processinput, processoutput, ARCH.amd64, 16)
-T.run(2000)
+filters = [DefaultFilters.stack_w1, DefaultFilters.mem_data_rw1, DefaultFilters.mem_addr1_rw1];
+
+T=TracerPIN('../target/wb_challenge', processinput, processoutput, ARCH.amd64, 16, filters=filters)
+T.run(200)
 bin2daredevil(configs={'attack_sbox':   {'algorithm':'AES', 'position':'LUT/AES_AFTER_SBOX'},
                        'attack_multinv':{'algorithm':'AES', 'position':'LUT/AES_AFTER_MULTINV'}})
