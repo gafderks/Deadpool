@@ -1,0 +1,773 @@
+
+[CONFIGURATION]
+
+  [GENERAL]
+	Number of threads:	 8
+	Index first sample:	 0
+	Number of samples:	 9968
+	Total number traces:	 200
+	Target number traces:	 200
+	Total number keys:	 256
+	Attack order:		 1
+	Return Type:		 d
+	Window size:		 0
+	Algorithm:		 AES
+	Round:			 0
+	Bytenum:		 all
+	Target all bits individually.
+	Secret Key:		 Unspecified
+	Memory:			 4.00GB
+	Keep track of:		 20
+	Separator :		 STANDARD
+
+  [TRACES]
+	Traces files:		 1
+	Traces type:		 i
+	Transpose traces:	 True
+	Total number samples:	 9968
+	Traces:
+	1. mem_data_rw1_200_9968.trace	 [200x9968]
+
+  [GUESSES]
+	Guesses files:		 1
+	Guesses type:		 u
+	Transpose guesses:	 True
+	Total columns guesses:	 16
+	Guesses:
+		1. mem_data_rw1_200_9968.input	 [200x16]
+
+[/CONFIGURATION]
+
+[INFO] File LUT/AES_AFTER_SBOX not found, using /usr/local/share/daredevil/LUT/AES_AFTER_SBOX instead.
+[INFO] Lookup table specified at LUT/AES_AFTER_SBOX
+
+[ATTACK] Computing 1-order correlations...
+[ATTACK] Key byte number 0
+
+[ATTACK] Target bit number 0
+
+[ATTACK] Target bit number 1
+
+[ATTACK] Target bit number 2
+
+[ATTACK] Target bit number 3
+
+[ATTACK] Target bit number 4
+
+[ATTACK] Target bit number 5
+
+[ATTACK] Target bit number 6
+
+[ATTACK] Target bit number 7
+
+Best 10 candidates for key byte #0 according to sum(abs(bit_correlations)):
+ 1: 0x52  sum: 8       
+ 2: 0xfb  sum: 2.21368 
+ 3: 0x05  sum: 2.19489 
+ 4: 0xa2  sum: 2.19207 
+ 5: 0x25  sum: 2.1867  
+ 6: 0xfd  sum: 2.18638 
+ 7: 0xdd  sum: 2.1858  
+ 8: 0x54  sum: 2.18273 
+ 9: 0x56  sum: 2.1756  
+10: 0xa7  sum: 2.15834 
+
+Best 10 candidates for key byte #0 according to highest abs(bit_correlations):
+ 1: 0x52  peak: 1       
+ 2: 0x35  peak: 0.368837
+ 3: 0x56  peak: 0.355639
+ 4: 0x74  peak: 0.355325
+ 5: 0xfb  peak: 0.350828
+ 6: 0x0c  peak: 0.347276
+ 7: 0x5f  peak: 0.345576
+ 8: 0x8c  peak: 0.344417
+ 9: 0xcc  peak: 0.342306
+10: 0xa1  peak: 0.340943
+
+[INFO] Attack of byte number 0 done in 3.653152 seconds.
+
+[ATTACK] Key byte number 1
+
+[ATTACK] Target bit number 0
+
+[ATTACK] Target bit number 1
+
+[ATTACK] Target bit number 2
+
+[ATTACK] Target bit number 3
+
+[ATTACK] Target bit number 4
+
+[ATTACK] Target bit number 5
+
+[ATTACK] Target bit number 6
+
+[ATTACK] Target bit number 7
+
+Best 10 candidates for key byte #1 according to sum(abs(bit_correlations)):
+ 1: 0x85  sum: 8       
+ 2: 0x72  sum: 2.23233 
+ 3: 0xc6  sum: 2.23197 
+ 4: 0xa4  sum: 2.22206 
+ 5: 0x94  sum: 2.21708 
+ 6: 0x76  sum: 2.2027  
+ 7: 0xe2  sum: 2.2016  
+ 8: 0xe0  sum: 2.19    
+ 9: 0xf0  sum: 2.18901 
+10: 0xc8  sum: 2.18379 
+
+Best 10 candidates for key byte #1 according to highest abs(bit_correlations):
+ 1: 0x85  peak: 1       
+ 2: 0x8e  peak: 0.370619
+ 3: 0x44  peak: 0.350018
+ 4: 0x2f  peak: 0.349375
+ 5: 0x40  peak: 0.346999
+ 6: 0xb1  peak: 0.345552
+ 7: 0xc6  peak: 0.341123
+ 8: 0xf0  peak: 0.339736
+ 9: 0x9c  peak: 0.337676
+10: 0x7b  peak: 0.334295
+
+[INFO] Attack of byte number 1 done in 3.647553 seconds.
+
+[ATTACK] Key byte number 2
+
+[ATTACK] Target bit number 0
+
+[ATTACK] Target bit number 1
+
+[ATTACK] Target bit number 2
+
+[ATTACK] Target bit number 3
+
+[ATTACK] Target bit number 4
+
+[ATTACK] Target bit number 5
+
+[ATTACK] Target bit number 6
+
+[ATTACK] Target bit number 7
+
+Best 10 candidates for key byte #2 according to sum(abs(bit_correlations)):
+ 1: 0x20  sum: 8       
+ 2: 0xaa  sum: 2.2131  
+ 3: 0xb2  sum: 2.17535 
+ 4: 0x8b  sum: 2.17481 
+ 5: 0x87  sum: 2.17161 
+ 6: 0x67  sum: 2.16882 
+ 7: 0x91  sum: 2.16501 
+ 8: 0xb5  sum: 2.16046 
+ 9: 0x96  sum: 2.16038 
+10: 0xc6  sum: 2.15567 
+
+Best 10 candidates for key byte #2 according to highest abs(bit_correlations):
+ 1: 0x20  peak: 1       
+ 2: 0x26  peak: 0.349527
+ 3: 0xd1  peak: 0.346765
+ 4: 0x96  peak: 0.346598
+ 5: 0xc0  peak: 0.3432  
+ 6: 0x4e  peak: 0.341616
+ 7: 0xb5  peak: 0.340986
+ 8: 0xe1  peak: 0.34047 
+ 9: 0xf0  peak: 0.339942
+10: 0xbe  peak: 0.339077
+
+[INFO] Attack of byte number 2 done in 3.635776 seconds.
+
+[ATTACK] Key byte number 3
+
+[ATTACK] Target bit number 0
+
+[ATTACK] Target bit number 1
+
+[ATTACK] Target bit number 2
+
+[ATTACK] Target bit number 3
+
+[ATTACK] Target bit number 4
+
+[ATTACK] Target bit number 5
+
+[ATTACK] Target bit number 6
+
+[ATTACK] Target bit number 7
+
+Best 10 candidates for key byte #3 according to sum(abs(bit_correlations)):
+ 1: 0xb6  sum: 8       
+ 2: 0x84  sum: 2.30269 
+ 3: 0x75  sum: 2.25162 
+ 4: 0xcf  sum: 2.22025 
+ 5: 0x82  sum: 2.19456 
+ 6: 0xcc  sum: 2.18611 
+ 7: 0x2a  sum: 2.17248 
+ 8: 0x3c  sum: 2.17112 
+ 9: 0x05  sum: 2.16719 
+10: 0xd1  sum: 2.15882 
+
+Best 10 candidates for key byte #3 according to highest abs(bit_correlations):
+ 1: 0xb6  peak: 1       
+ 2: 0x4f  peak: 0.3996  
+ 3: 0xb2  peak: 0.36958 
+ 4: 0x44  peak: 0.367951
+ 5: 0xee  peak: 0.362621
+ 6: 0x5c  peak: 0.36048 
+ 7: 0x8c  peak: 0.35988 
+ 8: 0x56  peak: 0.350878
+ 9: 0x58  peak: 0.346533
+10: 0x59  peak: 0.341207
+
+[INFO] Attack of byte number 3 done in 3.615730 seconds.
+
+[ATTACK] Key byte number 4
+
+[ATTACK] Target bit number 0
+
+[ATTACK] Target bit number 1
+
+[ATTACK] Target bit number 2
+
+[ATTACK] Target bit number 3
+
+[ATTACK] Target bit number 4
+
+[ATTACK] Target bit number 5
+
+[ATTACK] Target bit number 6
+
+[ATTACK] Target bit number 7
+
+Best 10 candidates for key byte #4 according to sum(abs(bit_correlations)):
+ 1: 0x9d  sum: 8       
+ 2: 0xee  sum: 2.27414 
+ 3: 0x81  sum: 2.1993  
+ 4: 0xf6  sum: 2.19832 
+ 5: 0xa8  sum: 2.19464 
+ 6: 0xc1  sum: 2.19039 
+ 7: 0x9c  sum: 2.18627 
+ 8: 0x54  sum: 2.16924 
+ 9: 0x84  sum: 2.16475 
+10: 0xec  sum: 2.16409 
+
+Best 10 candidates for key byte #4 according to highest abs(bit_correlations):
+ 1: 0x9d  peak: 1       
+ 2: 0xee  peak: 0.372011
+ 3: 0xf9  peak: 0.370167
+ 4: 0x84  peak: 0.35808 
+ 5: 0x18  peak: 0.354369
+ 6: 0x0c  peak: 0.349507
+ 7: 0x3a  peak: 0.343382
+ 8: 0xb7  peak: 0.341555
+ 9: 0x40  peak: 0.341207
+10: 0x50  peak: 0.33987 
+
+[INFO] Attack of byte number 4 done in 3.658197 seconds.
+
+[ATTACK] Key byte number 5
+
+[ATTACK] Target bit number 0
+
+[ATTACK] Target bit number 1
+
+[ATTACK] Target bit number 2
+
+[ATTACK] Target bit number 3
+
+[ATTACK] Target bit number 4
+
+[ATTACK] Target bit number 5
+
+[ATTACK] Target bit number 6
+
+[ATTACK] Target bit number 7
+
+Best 10 candidates for key byte #5 according to sum(abs(bit_correlations)):
+ 1: 0x50  sum: 8       
+ 2: 0x37  sum: 2.23119 
+ 3: 0xa1  sum: 2.19272 
+ 4: 0xa8  sum: 2.18684 
+ 5: 0x67  sum: 2.17698 
+ 6: 0x0f  sum: 2.16904 
+ 7: 0x92  sum: 2.16604 
+ 8: 0x97  sum: 2.15662 
+ 9: 0xfc  sum: 2.15278 
+10: 0xd0  sum: 2.1512  
+
+Best 10 candidates for key byte #5 according to highest abs(bit_correlations):
+ 1: 0x50  peak: 1       
+ 2: 0xff  peak: 0.365774
+ 3: 0xa1  peak: 0.362621
+ 4: 0xaa  peak: 0.362017
+ 5: 0xfc  peak: 0.349689
+ 6: 0x67  peak: 0.340614
+ 7: 0xe6  peak: 0.34    
+ 8: 0x4a  peak: 0.338827
+ 9: 0x68  peak: 0.335884
+10: 0x35  peak: 0.335626
+
+[INFO] Attack of byte number 5 done in 3.689027 seconds.
+
+[ATTACK] Key byte number 6
+
+[ATTACK] Target bit number 0
+
+[ATTACK] Target bit number 1
+
+[ATTACK] Target bit number 2
+
+[ATTACK] Target bit number 3
+
+[ATTACK] Target bit number 4
+
+[ATTACK] Target bit number 5
+
+[ATTACK] Target bit number 6
+
+[ATTACK] Target bit number 7
+
+Best 10 candidates for key byte #6 according to sum(abs(bit_correlations)):
+ 1: 0x63  sum: 8       
+ 2: 0xc7  sum: 2.21307 
+ 3: 0xc3  sum: 2.20683 
+ 4: 0xb0  sum: 2.20292 
+ 5: 0x98  sum: 2.20197 
+ 6: 0x33  sum: 2.1922  
+ 7: 0x89  sum: 2.18042 
+ 8: 0xc5  sum: 2.17206 
+ 9: 0x5b  sum: 2.16502 
+10: 0x0f  sum: 2.16387 
+
+Best 10 candidates for key byte #6 according to highest abs(bit_correlations):
+ 1: 0x63  peak: 1       
+ 2: 0xb0  peak: 0.354913
+ 3: 0xb4  peak: 0.349689
+ 4: 0xe5  peak: 0.349527
+ 5: 0xdf  peak: 0.344776
+ 6: 0x4a  peak: 0.33954 
+ 7: 0x98  peak: 0.338154
+ 8: 0xfa  peak: 0.335827
+ 9: 0x89  peak: 0.334019
+10: 0xc5  peak: 0.331663
+
+[INFO] Attack of byte number 6 done in 3.615334 seconds.
+
+[ATTACK] Key byte number 7
+
+[ATTACK] Target bit number 0
+
+[ATTACK] Target bit number 1
+
+[ATTACK] Target bit number 2
+
+[ATTACK] Target bit number 3
+
+[ATTACK] Target bit number 4
+
+[ATTACK] Target bit number 5
+
+[ATTACK] Target bit number 6
+
+[ATTACK] Target bit number 7
+
+Best 10 candidates for key byte #7 according to sum(abs(bit_correlations)):
+ 1: 0x72  sum: 8       
+ 2: 0x80  sum: 2.21248 
+ 3: 0x6e  sum: 2.20708 
+ 4: 0xb8  sum: 2.20691 
+ 5: 0x3b  sum: 2.19902 
+ 6: 0x7d  sum: 2.1895  
+ 7: 0x5d  sum: 2.18041 
+ 8: 0x81  sum: 2.17782 
+ 9: 0x56  sum: 2.16456 
+10: 0x1c  sum: 2.16403 
+
+Best 10 candidates for key byte #7 according to highest abs(bit_correlations):
+ 1: 0x72  peak: 1       
+ 2: 0x98  peak: 0.358502
+ 3: 0x80  peak: 0.353673
+ 4: 0x9d  peak: 0.353471
+ 5: 0x1c  peak: 0.35151 
+ 6: 0x70  peak: 0.350288
+ 7: 0x3b  peak: 0.347026
+ 8: 0x9b  peak: 0.340622
+ 9: 0x5a  peak: 0.340536
+10: 0x6f  peak: 0.339942
+
+[INFO] Attack of byte number 7 done in 3.690986 seconds.
+
+[ATTACK] Key byte number 8
+
+[ATTACK] Target bit number 0
+
+[ATTACK] Target bit number 1
+
+[ATTACK] Target bit number 2
+
+[ATTACK] Target bit number 3
+
+[ATTACK] Target bit number 4
+
+[ATTACK] Target bit number 5
+
+[ATTACK] Target bit number 6
+
+[ATTACK] Target bit number 7
+
+Best 10 candidates for key byte #8 according to sum(abs(bit_correlations)):
+ 1: 0xba  sum: 8       
+ 2: 0x1c  sum: 2.27232 
+ 3: 0x7b  sum: 2.21585 
+ 4: 0x6c  sum: 2.20387 
+ 5: 0xf4  sum: 2.19806 
+ 6: 0x16  sum: 2.19553 
+ 7: 0x33  sum: 2.19518 
+ 8: 0x01  sum: 2.18658 
+ 9: 0x74  sum: 2.18588 
+10: 0xc0  sum: 2.1777  
+
+Best 10 candidates for key byte #8 according to highest abs(bit_correlations):
+ 1: 0xba  peak: 1       
+ 2: 0x1c  peak: 0.390854
+ 3: 0x8f  peak: 0.358974
+ 4: 0x1d  peak: 0.353951
+ 5: 0x33  peak: 0.35328 
+ 6: 0xf0  peak: 0.348875
+ 7: 0x6c  peak: 0.348566
+ 8: 0x0c  peak: 0.344841
+ 9: 0x01  peak: 0.344024
+10: 0xf8  peak: 0.343498
+
+[INFO] Attack of byte number 8 done in 3.668605 seconds.
+
+[ATTACK] Key byte number 9
+
+[ATTACK] Target bit number 0
+
+[ATTACK] Target bit number 1
+
+[ATTACK] Target bit number 2
+
+[ATTACK] Target bit number 3
+
+[ATTACK] Target bit number 4
+
+[ATTACK] Target bit number 5
+
+[ATTACK] Target bit number 6
+
+[ATTACK] Target bit number 7
+
+Best 10 candidates for key byte #9 according to sum(abs(bit_correlations)):
+ 1: 0xbc  sum: 8       
+ 2: 0x24  sum: 2.24124 
+ 3: 0xe5  sum: 2.22093 
+ 4: 0x50  sum: 2.21056 
+ 5: 0x82  sum: 2.20374 
+ 6: 0xdf  sum: 2.20142 
+ 7: 0x9a  sum: 2.19408 
+ 8: 0x2c  sum: 2.18443 
+ 9: 0xee  sum: 2.18139 
+10: 0x1f  sum: 2.18046 
+
+Best 10 candidates for key byte #9 according to highest abs(bit_correlations):
+ 1: 0xbc  peak: 1       
+ 2: 0x9a  peak: 0.388797
+ 3: 0xd8  peak: 0.387424
+ 4: 0xe5  peak: 0.360072
+ 5: 0xa2  peak: 0.359111
+ 6: 0xee  peak: 0.355323
+ 7: 0x41  peak: 0.348715
+ 8: 0xd3  peak: 0.342216
+ 9: 0x9c  peak: 0.341616
+10: 0x1f  peak: 0.338942
+
+[INFO] Attack of byte number 9 done in 3.650672 seconds.
+
+[ATTACK] Key byte number 10
+
+[ATTACK] Target bit number 0
+
+[ATTACK] Target bit number 1
+
+[ATTACK] Target bit number 2
+
+[ATTACK] Target bit number 3
+
+[ATTACK] Target bit number 4
+
+[ATTACK] Target bit number 5
+
+[ATTACK] Target bit number 6
+
+[ATTACK] Target bit number 7
+
+Best 10 candidates for key byte #10 according to sum(abs(bit_correlations)):
+ 1: 0x85  sum: 8       
+ 2: 0x7d  sum: 2.26026 
+ 3: 0x99  sum: 2.21256 
+ 4: 0x73  sum: 2.20762 
+ 5: 0x25  sum: 2.18881 
+ 6: 0xae  sum: 2.17576 
+ 7: 0x4c  sum: 2.17211 
+ 8: 0x4f  sum: 2.16065 
+ 9: 0x7e  sum: 2.16055 
+10: 0x6f  sum: 2.15866 
+
+Best 10 candidates for key byte #10 according to highest abs(bit_correlations):
+ 1: 0x85  peak: 1       
+ 2: 0x25  peak: 0.375305
+ 3: 0x4f  peak: 0.370019
+ 4: 0x6f  peak: 0.359809
+ 5: 0x99  peak: 0.354287
+ 6: 0x7e  peak: 0.348715
+ 7: 0x4a  peak: 0.342096
+ 8: 0x0d  peak: 0.33775 
+ 9: 0x7d  peak: 0.330149
+10: 0xcc  peak: 0.329882
+
+[INFO] Attack of byte number 10 done in 3.671159 seconds.
+
+[ATTACK] Key byte number 11
+
+[ATTACK] Target bit number 0
+
+[ATTACK] Target bit number 1
+
+[ATTACK] Target bit number 2
+
+[ATTACK] Target bit number 3
+
+[ATTACK] Target bit number 4
+
+[ATTACK] Target bit number 5
+
+[ATTACK] Target bit number 6
+
+[ATTACK] Target bit number 7
+
+Best 10 candidates for key byte #11 according to sum(abs(bit_correlations)):
+ 1: 0xff  sum: 8       
+ 2: 0x7a  sum: 2.26426 
+ 3: 0x36  sum: 2.2398  
+ 4: 0x03  sum: 2.23919 
+ 5: 0x30  sum: 2.20369 
+ 6: 0x6c  sum: 2.18976 
+ 7: 0x60  sum: 2.18555 
+ 8: 0x34  sum: 2.17503 
+ 9: 0xdc  sum: 2.17197 
+10: 0x57  sum: 2.16294 
+
+Best 10 candidates for key byte #11 according to highest abs(bit_correlations):
+ 1: 0xff  peak: 1       
+ 2: 0x5c  peak: 0.389634
+ 3: 0xcc  peak: 0.35904 
+ 4: 0x35  peak: 0.350048
+ 5: 0x03  peak: 0.33954 
+ 6: 0x48  peak: 0.334874
+ 7: 0x60  peak: 0.330712
+ 8: 0x6c  peak: 0.330681
+ 9: 0x4e  peak: 0.330149
+10: 0x2e  peak: 0.329882
+
+[INFO] Attack of byte number 11 done in 3.651333 seconds.
+
+[ATTACK] Key byte number 12
+
+[ATTACK] Target bit number 0
+
+[ATTACK] Target bit number 1
+
+[ATTACK] Target bit number 2
+
+[ATTACK] Target bit number 3
+
+[ATTACK] Target bit number 4
+
+[ATTACK] Target bit number 5
+
+[ATTACK] Target bit number 6
+
+[ATTACK] Target bit number 7
+
+Best 10 candidates for key byte #12 according to sum(abs(bit_correlations)):
+ 1: 0x81  sum: 8       
+ 2: 0xdd  sum: 2.25316 
+ 3: 0x1f  sum: 2.22005 
+ 4: 0x71  sum: 2.21442 
+ 5: 0xa2  sum: 2.20929 
+ 6: 0x4b  sum: 2.18557 
+ 7: 0x85  sum: 2.17244 
+ 8: 0x06  sum: 2.17244 
+ 9: 0x89  sum: 2.17049 
+10: 0x29  sum: 2.16657 
+
+Best 10 candidates for key byte #12 according to highest abs(bit_correlations):
+ 1: 0x81  peak: 1       
+ 2: 0x4b  peak: 0.370841
+ 3: 0x71  peak: 0.359968
+ 4: 0xa1  peak: 0.355689
+ 5: 0x6d  peak: 0.349507
+ 6: 0xda  peak: 0.349078
+ 7: 0x89  peak: 0.343382
+ 8: 0xa2  peak: 0.3432  
+ 9: 0xc5  peak: 0.340068
+10: 0x9a  peak: 0.336101
+
+[INFO] Attack of byte number 12 done in 3.642854 seconds.
+
+[ATTACK] Key byte number 13
+
+[ATTACK] Target bit number 0
+
+[ATTACK] Target bit number 1
+
+[ATTACK] Target bit number 2
+
+[ATTACK] Target bit number 3
+
+[ATTACK] Target bit number 4
+
+[ATTACK] Target bit number 5
+
+[ATTACK] Target bit number 6
+
+[ATTACK] Target bit number 7
+
+Best 10 candidates for key byte #13 according to sum(abs(bit_correlations)):
+ 1: 0xa3  sum: 8       
+ 2: 0xb3  sum: 2.25405 
+ 3: 0xf3  sum: 2.21449 
+ 4: 0x4d  sum: 2.17309 
+ 5: 0x39  sum: 2.16935 
+ 6: 0xa8  sum: 2.16274 
+ 7: 0xd3  sum: 2.16092 
+ 8: 0x94  sum: 2.16048 
+ 9: 0x4c  sum: 2.15336 
+10: 0x2f  sum: 2.15224 
+
+Best 10 candidates for key byte #13 according to highest abs(bit_correlations):
+ 1: 0xa3  peak: 1       
+ 2: 0xd3  peak: 0.346128
+ 3: 0x9b  peak: 0.345752
+ 4: 0x0c  peak: 0.34284 
+ 5: 0x62  peak: 0.340134
+ 6: 0x33  peak: 0.33987 
+ 7: 0xa8  peak: 0.33954 
+ 8: 0xc7  peak: 0.337109
+ 9: 0x8d  peak: 0.335749
+10: 0xb3  peak: 0.332015
+
+[INFO] Attack of byte number 13 done in 3.635808 seconds.
+
+[ATTACK] Key byte number 14
+
+[ATTACK] Target bit number 0
+
+[ATTACK] Target bit number 1
+
+[ATTACK] Target bit number 2
+
+[ATTACK] Target bit number 3
+
+[ATTACK] Target bit number 4
+
+[ATTACK] Target bit number 5
+
+[ATTACK] Target bit number 6
+
+[ATTACK] Target bit number 7
+
+Best 10 candidates for key byte #14 according to sum(abs(bit_correlations)):
+ 1: 0x52  sum: 8       
+ 2: 0x05  sum: 2.24417 
+ 3: 0xb3  sum: 2.22824 
+ 4: 0xa9  sum: 2.22079 
+ 5: 0xa2  sum: 2.19194 
+ 6: 0x2a  sum: 2.18962 
+ 7: 0x0b  sum: 2.18673 
+ 8: 0xf8  sum: 2.18119 
+ 9: 0x20  sum: 2.17592 
+10: 0x5c  sum: 2.15709 
+
+Best 10 candidates for key byte #14 according to highest abs(bit_correlations):
+ 1: 0x52  peak: 1       
+ 2: 0x83  peak: 0.376947
+ 3: 0x12  peak: 0.373766
+ 4: 0xa9  peak: 0.372011
+ 5: 0xb3  peak: 0.35125 
+ 6: 0x5e  peak: 0.339942
+ 7: 0x05  peak: 0.338154
+ 8: 0xc1  peak: 0.335494
+ 9: 0x2b  peak: 0.334019
+10: 0x2f  peak: 0.333875
+
+[INFO] Attack of byte number 14 done in 3.652872 seconds.
+
+[ATTACK] Key byte number 15
+
+[ATTACK] Target bit number 0
+
+[ATTACK] Target bit number 1
+
+[ATTACK] Target bit number 2
+
+[ATTACK] Target bit number 3
+
+[ATTACK] Target bit number 4
+
+[ATTACK] Target bit number 5
+
+[ATTACK] Target bit number 6
+
+[ATTACK] Target bit number 7
+
+Best 10 candidates for key byte #15 according to sum(abs(bit_correlations)):
+ 1: 0xa1  sum: 8       
+ 2: 0x8d  sum: 2.21273 
+ 3: 0xbd  sum: 2.19964 
+ 4: 0x1b  sum: 2.17453 
+ 5: 0x32  sum: 2.16971 
+ 6: 0x14  sum: 2.16577 
+ 7: 0x5e  sum: 2.16339 
+ 8: 0xdd  sum: 2.15847 
+ 9: 0xb9  sum: 2.15735 
+10: 0xaa  sum: 2.15661 
+
+Best 10 candidates for key byte #15 according to highest abs(bit_correlations):
+ 1: 0xa1  peak: 1       
+ 2: 0xb9  peak: 0.349887
+ 3: 0x82  peak: 0.342767
+ 4: 0xfc  peak: 0.34047 
+ 5: 0x0b  peak: 0.340068
+ 6: 0x7a  peak: 0.339077
+ 7: 0x58  peak: 0.33848 
+ 8: 0xbd  peak: 0.335884
+ 9: 0x8d  peak: 0.334713
+10: 0xdc  peak: 0.330681
+
+[INFO] Attack of byte number 15 done in 3.678689 seconds.
+
+Most probable key sum(abs):
+1: 128: 528520b69d506372babc85ff81a352a1
+2: 122.303: 528520849d506372babc85ff81a352a1
+3: 122.274: 528520b6ee506372babc85ff81a352a1
+4: 122.272: 528520b69d5063721cbc85ff81a352a1
+5: 122.264: 528520b69d506372babc857a81a352a1
+6: 116.577: 52852084ee506372babc85ff81a352a1
+7: 116.575: 528520849d5063721cbc85ff81a352a1
+8: 116.567: 528520849d506372babc857a81a352a1
+9: 116.546: 528520b6ee5063721cbc85ff81a352a1
+10: 116.538: 528520b6ee506372babc857a81a352a1
+
+Most probable key max(abs):
+1: 16: 528520b69d506372babc85ff81a352a1
+2: 15.3996: 5285204f9d506372babc85ff81a352a1
+3: 15.3909: 528520b69d5063721cbc85ff81a352a1
+4: 15.3896: 528520b69d506372babc855c81a352a1
+5: 15.3888: 528520b69d506372ba9a85ff81a352a1
+6: 14.7905: 5285204f9d5063721cbc85ff81a352a1
+7: 14.7892: 5285204f9d506372babc855c81a352a1
+8: 14.7884: 5285204f9d506372ba9a85ff81a352a1
+9: 14.7805: 528520b69d5063721cbc855c81a352a1
+10: 14.7797: 528520b69d5063721c9a85ff81a352a1
+[INFO] Total attack of file LUT/AES_AFTER_SBOX done in 58.461356 seconds.
+
